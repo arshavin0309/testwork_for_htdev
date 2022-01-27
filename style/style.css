@@ -69,11 +69,6 @@
     left: 0;
 }
 
-/* .spacing__container {
-    width: 100%;
-    height: 100px;
-} */
-
 .discription__container {
     padding-top: 100px;
     padding-bottom: 56px;
@@ -281,8 +276,9 @@
     bottom: 105px;
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 1339px) {
     .container {
+        min-width: 930px;
         padding-left: 50px;
         padding-right: 50px;
     }
@@ -292,8 +288,15 @@
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1039px) {
     .container {
+        min-width: 610px;
+    }
+}
+
+@media (max-width: 699px) {
+    .container {
+        min-width: none;
         padding-left: 15px;
         padding-right: 15px;
     }
@@ -331,6 +334,77 @@
     }
 
     .whoAreWe__box {
+        max-width: 90%;
         top: 135px;
+    }
+
+    .whoAreWe__container {
+        background-position: right top;
+        background-size: contain;
+    }
+
+    .discription__container {
+        padding-top: 10px;
+    }
+
+    .projects__container {
+        min-height: 415px;
+        background-position: left top;
+        background-size: contain;
+    }
+
+    .projects__box {
+        max-width: 90%;
+        top: 145px;
+    }
+
+    .arrows {
+        display: none;
+    }
+
+    .information__container {
+        padding-bottom: 20px;
+    }
+
+    .information__box {
+        margin-left: 5%;
+    }
+
+    .now__box {
+        align-items: start;
+    }
+
+    .now__item:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    .events__container {
+        background-position: center bottom;
+        background-size: contain;
+    }
+
+    .events__box {
+        max-width: 90%;
+    }
+
+    .withPersonal__container {
+        padding-top: 60px;
+    }
+
+    .toPersonal__title {
+        max-width: 250px;
+        padding-left: 0;
+        text-align: left;
+    }
+
+    .toPersonal__container {
+        min-height: 1270px;
+        background-position: left 20%;
+        background-size: contain;
+    }
+    
+    .toPersonal__box {
+        max-width: 90%;
+        top: 32%;
     }
 }
